@@ -27,6 +27,19 @@ var articles= {
     content: ` <p>This is third article
     Hi this is first .Hi this is first article.Hi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first article new using var and functions</p>`
   
+},
+ 'article-four':{title:'Contact Us | Yaswanth',
+        heading:'You can contact us at below Apps',
+    date:'20-09-2016',
+    content: `<p> <img src="/ui/ganesh.jpeg" class="img-medium"/>
+            <hr/>
+            <img src="/ui/DSC_0113.JPG" class="img-medium"/>
+            <hr/>
+            <img src="/ui/group2" class="img-medium"/>
+            <hr/>
+            <img src="/ui/group1" class="img-medium"/>
+            
+    here you can contact us</p>`
 }
 };
 
