@@ -80,17 +80,6 @@ app.get('/:articleName', function (req, res) {
   res.send(createTemplate(articles[articleName]));
 });
 
-app.get('/about.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'about.html'));
-});
-
-app.get('/contact', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'contact.html'));
-});
-
-app.get('/team', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'team.html'));
-});
 
 
 
