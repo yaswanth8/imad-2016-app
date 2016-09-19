@@ -27,3 +27,19 @@ body {
                  
                   padding-left: 20px;
  }
+footer {
+    font-family: cursive;
+    background-color: burlywood;
+    padding-top: 60px;
+    text-align: center;
+    font-size: 200%;
+    font-weight: bold;
+}
+header {
+    font-family: cursive;
+    background-color: burlywood;
+    padding-top: 60px;
+    text-align: center;
+    font-size: 200%;
+    font-weight: bold;
+}
