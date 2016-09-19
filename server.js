@@ -31,7 +31,7 @@ var articles= {
 };
 
 
-var foot= {
+var foots= {
 'foot-one':{
     title:'About | Yaswanth',
     heading:'This is about us',
@@ -114,7 +114,7 @@ app.get('/:articleName', function (req, res) {
 
 app.get('/:footName', function (req, res) {
     var footName=req.params.footName;
-  res.send(createTemplate(foot[footName]));
+  res.send(createTemplate(foots[footName]));
 });
 
 
