@@ -35,47 +35,16 @@ var articles= {
             <hr/>
             <img src="/ui/DSC_0113.JPG" class="img-medium"/>
             <hr/>
-            <img src="/ui/group2" class="img-medium"/>
+            <img src="/ui/group2.jpeg" class="img-medium"/>
             <hr/>
-            <img src="/ui/group1" class="img-medium"/>
+            <img src="/ui/group1.jpeg" class="img-medium"/>
             
     here you can contact us</p>`
 }
 };
 
 
-var foots= {
-'foot-one':{
-    title:'About | Yaswanth',
-    heading:'This is about us',
-    date:'19-09-2016',
-    content: ` <p> Hi this is first .Hi this is first article.Hi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first article new using var and functions</p>`
-    
-},
-'foot-two':{
-       title:'Contact Us | Yaswanth',
-        heading:'You can contact us at below Apps',
-    date:'20-09-2016',
-    content: `<p> <img src="/ui/ganesh.jpeg" class="img-medium"/>
-            <hr/>
-            <img src="/ui/DSC_0113.JPG" class="img-medium"/>
-            <hr/>
-            <img src="/ui/group2" class="img-medium"/>
-            <hr/>
-            <img src="/ui/group1" class="img-medium"/>
-            
-    here you can contact us</p>`
-  
-},
-'foot-three':{
-    title:'Team | Yaswanth',
-    heading:'This is out team',
-    date:'22-09-2016',
-    content: ` <p>This is third article
-    Hi this is first .Hi this is first article.Hi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first article new using var and functions</p>`
-  
-}
-};
+
 function createTemplate(data){
     var title=data.title;
     var date=data.date;
@@ -91,25 +60,25 @@ function createTemplate(data){
         
         </head>
    
-    <body>
-    <header> </header>
-        <div class="container">
-        <div>
-            <a href="/">HOME</a>
-        </div>
-        <hr/>
-        <div>
-         <h3> ${heading}</h3>    
-        </div>
-        <div>
-            ${date}
-        </div>
-        <div>
-      ${content}
-        </div>
-        </div>
-    <footer></footer>    
-    </body>
+             <body>
+                <header> </header>
+                 <div class="container">
+                                 <div>
+                                    <a href="/">HOME</a>
+                                </div>
+                     <hr/>
+                                <div>
+                                     <h3> ${heading}</h3>    
+                                 </div>
+                                <div>
+                                         ${date}
+                                 </div>
+                                 <div>
+                                 ${content}
+                                </div>
+                 </div>
+                 <footer></footer>    
+         </body>
             </html>`;
             return htmlTemplate;
 
@@ -125,10 +94,7 @@ app.get('/:articleName', function (req, res) {
   res.send(createTemplate(articles[articleName]));
 });
 
-app.get('/:footName', function (req, res) {
-    var footName=req.params.footName;
-  res.send(createTemplate(foots[footName]));
-});
+
 
 
 
