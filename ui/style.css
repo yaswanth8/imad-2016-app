@@ -19,6 +19,9 @@ body {
 .img-medium {
     height: 200px;
 }
+.img-high{
+    height: 500px;
+}
  .container {
                  max-width: 800px;
                  margin: 0 auto;
@@ -38,7 +41,6 @@ footer {
 header {
     font-family: cursive;
     background-color: burlywood;
-    padding-top: 60px;
     text-align: center;
     font-size: 200%;
     font-weight: bold;
