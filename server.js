@@ -28,19 +28,35 @@ var articles= {
     Hi this is first .Hi this is first article.Hi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first article new using var and functions</p>`
   
 },
- 'article-four':{title:'Contact Us | Yaswanth',
+ 'article-four':{title:'About | Yaswanth',
+        heading:' About us',
+    date:'20-09-2016',
+    content: `<p> We are still in the basic stage</p>
+              <p> This web application is soon going to update</p>
+              <p> Hope you guys co-operate with us make this Big</p>`
+},
+
+'article-five':{title:'Contact Us | Yaswanth',
         heading:'You can contact us at below Apps',
     date:'20-09-2016',
-    content: `<p> <img src="/ui/ganesh.jpeg" class="img-medium"/>
-            <hr/>
-            <img src="/ui/DSC_0113.JPG" class="img-medium"/>
-            <hr/>
-            <img src="/ui/group2.jpeg" class="img-medium"/>
-            <hr/>
-            <img src="/ui/group1.jpeg" class="img-medium"/>
+    content: '<h1> This is team page </h1>'
             
-    here you can contact us</p>`
+   
+},
+'article-six':{title:'Team | Yaswanth',
+        heading:'Here is our team',
+    date:'20-09-2016',
+    content: `<p> <img src="/ui/ganesh.jpeg" class="img-high"/>
+            <hr/>
+            <img src="/ui/DSC_0113.JPG" class="img-high"/>
+            <hr/>
+            <img src="/ui/group2.jpeg" class="img-high"/>
+            <hr/>
+            <img src="/ui/group1.jpeg" class="img-high"/>
+            
+             Team Members</p>`
 }
+
 };
 
 
@@ -54,7 +70,7 @@ function createTemplate(data){
 
             `<html>
         <head>
-        <title> ${title}</title>
+        <title> ${title} </title>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
          <link href="/ui/style.css" rel="stylesheet" />
         
@@ -108,6 +124,14 @@ app.get('/ui/madi.png', function (req, res) {
 
 app.get('/ui/ganesh.jpeg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'ganesh.jpeg'));
+});
+
+app.get('/ui/group1.jpeg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'group1.jpeg'));
+});
+
+app.get('/ui/group2.jpeg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'group2.jpeg'));
 });
 
 
