@@ -8,6 +8,7 @@ element.innerHTML='Hi I am Yaswanth This is my webapp and Im from vijayawada ';
 
 var img=document.getElementById('madi');
 
+var marginLeft=0;
 function moveRight(){
     marginLeft= marginLeft+10;
     img.style.marginLeft+'px';
