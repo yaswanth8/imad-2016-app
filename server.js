@@ -8,6 +8,7 @@ app.use(morgan('combined'));
 var articles= {
 'article-one':{
     title:'Article 1 | Yaswanth',
+    head: '<a href="/">HOME</a>',
     heading:'Article one',
     date:'19-09-2016',
     content: ` <p> Hi this is first .Hi this is first article.Hi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first article new using var and functions</p>`
@@ -15,6 +16,7 @@ var articles= {
 },
 'article-two':{
        title:'Article 2 | Yaswanth',
+       head: '<a href="/">HOME</a>',
     heading:'Article two',
     date:'20-09-2016',
     content: ` <p> This is the second article  Hi this is first .Hi this is first article.Hi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first article new using var and functions</p>`
@@ -22,6 +24,7 @@ var articles= {
 },
 'article-three':{
     title:'Article 3 | Yaswanth',
+    head: '<a href="/">HOME</a>',
     heading:'Article three',
     date:'22-09-2016',
     content: ` <p>This is third article
@@ -29,25 +32,28 @@ var articles= {
   
 },
  'article-four':{title:'About | Yaswanth',
+        head: '<a href="/">HOME</a>',
         heading:' About us',
-    date:'20-09-2016',
-    content: `<p> We are still in the basic stage</p>
+        date:'20-09-2016',
+        content: `<p> We are still in the basic stage</p>
               <p> This web application is soon going to update</p>
               <p> Hope you guys co-operate with us make this Big</p>`
 },
 
 'article-five':{title:'Contact Us | Yaswanth',
+        head: '<a href="/">HOME</a>',
         heading:'You can contact us at below Apps',
         date:'20-09-2016',
-     content: '<h1> This is team page </h1>',
+        content: '<h1> This is team page </h1>',
         foot: '<p> Facebook </p>'
             
    
 },
 'article-six':{title:'Team | Yaswanth',
-        heading:'Here is our team',
-    date:'20-09-2016',
-    content: `<p> <img src="/ui/ganesh.jpeg" class="img-high"/>
+            head: '<a href="/">HOME</a>',
+            heading:'Here is our team',
+            date:'20-09-2016',
+            content: `<p> <img src="/ui/ganesh.jpeg" class="img-high"/>
             <hr/>
             <img src="/ui/DSC_0113.JPG" class="img-high"/>
             <hr/>
@@ -67,6 +73,7 @@ function createTemplate(data){
     var date=data.date;
     var heading=data.heading;
     var content=data.content;
+    var head=data.head;
     var foot=data.foot;
     var htmlTemplate=
 
@@ -79,7 +86,7 @@ function createTemplate(data){
         </head>
    
              <body>
-                <header> <a href="/">HOME</a> </header>
+                <header> ${head} </header>
                  <div class="container">
                                
                      <hr/>
@@ -127,6 +134,19 @@ app.get('/ui/main.js', function (req, res) {
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
+
+app.get('/ui/fb.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'fb.png'));
+});
+
+app.get('/ui/twitter.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'twitter.png'));
+});
+
+app.get('/ui/instagram.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'instagram.png'));
+});
+
 
 app.get('/ui/ganesh.jpeg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'ganesh.jpeg'));
