@@ -48,7 +48,7 @@ var articles= {
         head: '<a href="/">HOME</a>',
         heading:'You can contact us at below Apps',
         date:'20-09-2016',
-        content: '<h1> This is team page </h1>',
+        content: '<h1> Contact us </h1>',
         foot: `<p><a href="https://www.facebook.com/yaswanth8"> <img src="/ui/fb.png" class="img-small"/> </a>
                 <a href="https://twitter.com/yaswanth8k">  <img src="/ui/twitter.png" class="img-small"/> </a>
                 <a href= "https://www.instagram.com/yaswanth___k/"><img src="/ui/instagram.png" class="img-small"/> </a> </p>`
