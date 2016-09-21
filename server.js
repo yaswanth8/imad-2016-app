@@ -38,8 +38,9 @@ var articles= {
 
 'article-five':{title:'Contact Us | Yaswanth',
         heading:'You can contact us at below Apps',
-    date:'20-09-2016',
-    content: '<h1> This is team page </h1>'
+        date:'20-09-2016',
+     content: '<h1> This is team page </h1>',
+        foot: '<p> Facebook </p>'
             
    
 },
@@ -66,6 +67,7 @@ function createTemplate(data){
     var date=data.date;
     var heading=data.heading;
     var content=data.content;
+    var foot=data.foot;
     var htmlTemplate=
 
             `<html>
@@ -91,7 +93,7 @@ function createTemplate(data){
                                  ${content}
                                 </div>
                  </div>
-                 <footer></footer>    
+                 <footer> ${foot}</footer>    
          </body>
             </html>`;
             return htmlTemplate;
