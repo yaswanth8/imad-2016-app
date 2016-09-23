@@ -107,7 +107,7 @@ function createTemplate(data){
                                  ${content}
                                 </div>
                  </div>
-                 <footer> ${foot}</footer>    
+                 <footer> ${foot} <div> <p align="right">Send feedback</p></div></footer>    
          </body>
             </html>`;
             return htmlTemplate;
