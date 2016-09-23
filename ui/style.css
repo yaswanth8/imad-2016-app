@@ -34,6 +34,9 @@ body {
                  
                   padding-left: 20px;
  }
+ div{
+     max-width: 800px;
+ }
 footer {
     font-family: cursive;
     background-color: burlywood;
