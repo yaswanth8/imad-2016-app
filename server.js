@@ -107,7 +107,7 @@ function createTemplate(data){
                                  ${content}
                                 </div>
                  </div>
-                 <footer> ${foot} <div> <p align="right">Send feedback</p></div></footer>    
+                 <footer> ${foot} <div> <p align="right"><a href="http://yaswanth8.imad.hasura-app.io/article-five">Send feedbacka</a></p></div></footer>    
          </body>
             </html>`;
             return htmlTemplate;
