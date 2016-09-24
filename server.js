@@ -124,6 +124,18 @@ app.get('/counter', function (req, res) {
   res.send(counter.toString());
 });
 
+var names[];
+app.get('/submit-name/',function(req,res){  // URL ://submit-name?namename=xxxx
+    //get the name from the request
+    var name = req.query.name; //1000
+    names.push(name);
+    // JSON ; java script obejct notation
+    res.send(JSON.stringify(names));
+    
+    
+});
+
+
 app.get('/:articleName', function (req, res) {
     var articleName=req.params.articleName;
      // articleName = article-one
@@ -144,16 +156,7 @@ app.get('/ui/main.js', function (req, res) {
 });
 
 
-var names[];
-app.get('/submit-name/:name',function(req,res){
-    //get the name from the request
-    var name = req.params.name; //1000
-    names.push(name);
-    // JSON ; java script obejct notation
-    res.send(JSON.stringify(names));
-    
-    
-});
+
 
 app.get('/ui/yaswanth.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'yaswanth.jpg'));
