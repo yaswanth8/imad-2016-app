@@ -18,7 +18,7 @@ button.onclick= function () {
      };
 
     //make a request
-    request.open('GET','/counter',true);
+    request.open('GET','http://yaswanth8.imad.hasura-app.io/counter',true);
     request.send(null);
 };
 // Submit name
@@ -53,7 +53,7 @@ submit.onclick = function () {
    var nameInput= document.getElementById('name');
    var name= nameInput.value;
   //make a request
-  request.open('GET','/submit-name?name='+ name,true);
+  request.open('GET','http://yaswanth8.imad.hasura-app.io/submit-name?name='+ name,true);
   request.send(null);
 
 
