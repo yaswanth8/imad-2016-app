@@ -13,8 +13,7 @@ var articles= {
     date:'19-09-2016',
     content: ` <p> Hi this is first .Hi this is first article.Hi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first article new using var and functions</p>`,
      foot: '<p></p>'
-    
-},
+    },
 'article-two':{
        title:'Article 2 | Yaswanth',
        head: '<a href="/">HOME</a>',
