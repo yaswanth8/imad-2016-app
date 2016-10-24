@@ -39,7 +39,7 @@ var articles= {
         date:'20-09-2016',
         content: `<p> We are still in the basic stage</p>
               <p> This web application is soon going to update</p>
-              <p> Hope you guys co-operate with us make this Big</p>`,
+              <p> Hope you guys co-operate with us and make this big</p>`,
               foot: '<p></p>'
 },
 
