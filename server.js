@@ -13,71 +13,7 @@ var config={
 var app = express();
 app.use(morgan('combined'));
 
- // var articles= {
-'article-one':{
-    title:'Article 1 | Yaswanth',
-    head: '<a href="/">HOME</a>',
-    heading:'Article one',
-    date:'19-09-2016',
-    content: ` <p> Hi this is first .Hi this is first article.Hi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first article new using var and functions</p>`,
-     foot: '<p></p>'
-    },
-'article-two':{
-       title:'Article 2 | Yaswanth',
-       head: '<a href="/">HOME</a>',
-    heading:'Article two',
-    date:'20-09-2016',
-    content: ` <p> This is the second article  Hi this is first .Hi this is first article.Hi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first article new using var and functions</p>`,
-     foot: '<p></p>'
-  
-},
-'article-three':{
-    title:'Article 3 | Yaswanth',
-    head: '<a href="/">HOME</a>',
-    heading:'Article three',
-    date:'22-09-2016',
-    content: ` <p>This is third article
-    Hi this is first .Hi this is first article.Hi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first articleHi this is first article new using var and functions</p>`,
-     foot: '<p></p>'
-  
-},
- 'article-four':{title:'About | Yaswanth',
-        head: '<a href="/">HOME</a>',
-        heading:' About us',
-        date:'20-09-2016',
-        content: `<p> This web application is soon going to update</p>
-              <p> Hope you guys co-operate with us and make this big</p>`,
-              foot: '<p></p>'
-},
-
-'article-five':{title:'Contact Us | Yaswanth',
-        head: '<a href="/">HOME</a>',
-        heading:'You can contact us at below Apps',
-        date:'20-09-2016',
-        content: '<h1> Contact us </h1>',
-        foot: `<p><a href="https://www.facebook.com/yaswanth8"> <img src="/ui/fb.png" class="img-small"/> </a>
-                <a href="https://twitter.com/yaswanth8k">  <img src="/ui/twitter.png" class="img-small"/> </a>
-                <a href= "https://www.instagram.com/yaswanth___k/"><img src="/ui/instagram.png" class="img-small"/> </a> </p>`
-            
-   
-},
-'article-six':{title:'Team | Yaswanth',
-            head: '<a href="/">HOME</a>',
-            heading:'Here is our team',
-            date:'20-09-2016',
-            content: `<p> <img src="/ui/ganesh.jpeg" class="img-high"/>
-            <hr/>
-            <img src="/ui/DSC_0113.JPG" class="img-high"/>
-            <hr/>
-            <img src="/ui/group2.jpeg" class="img-high"/>
-            <hr/>
-            <img src="/ui/group1.jpeg" class="img-high"/>
-            
-             Team Members</p>`,
-              foot: '<p></p>'
-}
-
-};
+ 
 
 
 
