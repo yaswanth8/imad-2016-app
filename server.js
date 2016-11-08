@@ -49,7 +49,7 @@ function createTemplate(data){
                                  ${content}
                                 </div>
                  </div>
-                 <footer> ${foot} <div> <p align="right"><a href="http://yaswanth8.imad.hasura-app.io/article-five">Send feedback</a></p></div></footer>    
+                 <footer> ${foot} <div> <p align="right"><a href="http://yaswanth8.imad.hasura-app.io/articles/article-five">Send feedback</a></p></div></footer>    
          </body>
             </html>`;
             return htmlTemplate;
