@@ -34,9 +34,9 @@ submit.onclick = function () {
    console.log(username);
    console.log(password);
   
-  //request.open('POST','http://yaswanth8.imad.hasura-app.io/login',true);
-  //request.setRequestHeader('Content-Type','applicatoin/json');
-  //request.send(JSON.stringify({username: username, password: password}));
+  request.open('POST','http://yaswanth8.imad.hasura-app.io/login',true);
+  request.setRequestHeader('Content-Type','applicatoin/json');
+  request.send(JSON.stringify({username: username, password: password}));
 
 
 
