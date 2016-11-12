@@ -65,7 +65,7 @@ function createTemplate(data){
                                  <center>Loading comments...</center>
                                      </div>
                  </div>
-                 <footer> ${foot} <div> <p align="right"><a href="http://yaswanth8.imad.hasura-app.io">Send feedback</a></p></div></footer>    
+                 <footer> ${foot} <div> <p align="right"><a href="http://yaswanth8.imad.hasura-app.io/articles/article-feedback">Send feedback</a></p></div></footer>    
                  <script type="text/javascript" src="/ui/article.js"></script>
          </body>
             </html>`;
