@@ -247,7 +247,7 @@ app.get('/page/:pageName', function (req, res) {
             res.status(404).send('Article not found');
         } else {
             var pageData = result.rows[0];
-            res.send(createTemplate(pageData));
+            res.send(createTemplate(articleData));
         }
     }
   });
