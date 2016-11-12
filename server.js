@@ -237,21 +237,7 @@ app.get('/articles/:articleName', function (req, res) {
   });
 });
 
-app.get('/page/:pageName', function (req, res) {
-  // SELECT * FROM article WHERE title = '\'; DELETE WHERE a = \'asdf'
-  pool.query("SELECT * FROM page WHERE title = $1", [req.params.pageName], function (err, result) {
-    if (err) {
-        res.status(500).send(err.toString());
-    } else {
-        if (result.rows.length === 0) {
-            res.status(404).send('Article not found');
-        } else {
-            var pageData = result.rows[0];
-            res.send(createTemplate(pageData));
-        }
-    }
-  });
-});
+
 
 app.get('/ui/:fileName', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', req.params.fileName));
