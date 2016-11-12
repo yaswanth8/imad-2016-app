@@ -237,7 +237,7 @@ app.get('/articles/:articleName', function (req, res) {
   });
 });
 
-app.get('/pages/:pageName', function (req, res) {
+app.get('/page/:pageName', function (req, res) {
   // SELECT * FROM article WHERE title = '\'; DELETE WHERE a = \'asdf'
   pool.query("SELECT * FROM page WHERE title = $1", [req.params.pageName], function (err, result) {
     if (err) {
