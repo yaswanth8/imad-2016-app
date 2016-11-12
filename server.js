@@ -33,7 +33,6 @@ function createTemplate(data){
     var date=data.date;
     var heading=data.heading;
     var content=data.content;
-   
     var foot=data.foot;
     var htmlTemplate=
 
