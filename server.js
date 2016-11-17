@@ -252,14 +252,6 @@ app.get('/ui/:fileName', function (req, res) {
 
 
 
-
-
-
-
-app.get('/ui/yaswanth.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'yaswanth.jpg'));
-});
-
 app.get('/ui/fb.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'fb.png'));
 });
