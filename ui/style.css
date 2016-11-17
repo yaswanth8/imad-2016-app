@@ -31,7 +31,7 @@ body {
     font-family: "Times New Roman", Times, serif;
     text-align: center;
     
-    background-color:#00FFFF;
+    background-color:lightblue;
     
     
 }
@@ -73,7 +73,7 @@ footer {
 }
 header {
     font-family: "Times New Roman", Times, serif;
-    background-color: lightblue;
+    background-color: #00FFFF;
     text-align: left;
     font-size: 150%;
     font-weight: bold;
