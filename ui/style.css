@@ -1,5 +1,5 @@
 body {
-    font-family: sans-serif;
+    font-family: "Times New Roman", Times, serif;
   
    padding-top: 10px;
 }
@@ -30,7 +30,7 @@ body {
                  max-width: 800px;
                  margin: 0 auto;
                  color: gray;
-                 font-family: sans-serif;
+                 font-family: "Times New Roman", Times, serif;
                  
                   padding-left: 20px;
  }
@@ -45,6 +45,7 @@ body {
 }
 
 .commenter {
+    font-family: "Times New Roman", Times, serif;
     font-style: italic;
     font-size: 0.8em;
 }
@@ -64,7 +65,7 @@ footer {
     font-weight: bold;
 }
 header {
-    font-family: cursive;
+    font-family: "Times New Roman", Times, serif;
     background-color: burlywood;
     text-align: left;
     font-size: 150%;
