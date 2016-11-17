@@ -26,6 +26,15 @@ body {
 .img-high{
     height: 500px;
 }
+
+.loginbox {
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    
+    background-color:#00FFFF;
+    
+    
+}
  .container {
                  max-width: 800px;
                  margin: 0 auto;
@@ -34,9 +43,7 @@ body {
                  
                   padding-left: 20px;
  }
- div{
-     color: green;
- }
+ 
  
  comment {
     margin-left: 20px;
