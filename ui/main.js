@@ -3,7 +3,7 @@ function loadLoginForm () {
     var loginHtml = `
             <div class="loginbox">
             <center>
-          <ul class="loginbox">
+          <ul style="list-style-type:none" class="loginbox" >
        <h3>Login or Register to comment these articles below</h3>  
        <li> User  ID:  <input type="text" id="Username" placeholder="username" />  </li>
        <li> Password:   <input type="password" id="password" />  <li> 
