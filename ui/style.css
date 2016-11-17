@@ -39,8 +39,8 @@ body {
  }
  
  comment {
-    margin-left: 10px;
-    padding-bottom: 10px;
+    margin-left: 20px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #ccc;
 }
 
@@ -51,8 +51,8 @@ body {
 }
 
 #comment_form {
-    margin-left: 10px;
-    padding-bottom: 10px;
+    margin-left: 20px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #ccc;
 }
  
