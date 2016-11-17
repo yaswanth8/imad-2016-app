@@ -1,13 +1,18 @@
 
 function loadLoginForm () {
     var loginHtml = `
-        <h3>Login or Register to comment these articles below</h3>
-        <input type="text" id="username" placeholder="username" />
-        <input type="password" id="password" />
-        <br/><br/>
+            <div class="loginbox">
+            <center>
+          <ul class="loginbox">
+       <h3>Login or Register to comment these articles below</h3>  
+       <li>  <input type="text" id="username" placeholder="username" />  </li>
+       <li>    <input type="password" id="password" />          <li> 
+        </ul>
+    <br/><br/>
         <input type="submit" id="login_btn" value="Login" />
         <input type="submit" id="register_btn" value="Register" />
-        `;
+        </center>
+          </div> `;
     document.getElementById('login_area').innerHTML = loginHtml;
     
     // Submit username/password to login
