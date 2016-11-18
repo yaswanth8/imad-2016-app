@@ -73,13 +73,7 @@ footer {
 }
 header {
     font-family: "Times New Roman", Times, serif;
-    background: #a90909;
-	border-bottom: 1px solid #ebebeb;
-	color: #91959c;
-	height: 50px;
-	padding: 1px 1px 1px;
-  margin-left:-15px;
-  margin-right:-15px;
+    background-color: #00FFFF;
     text-align: left;
     font-size: 150%;
     font-weight: bold;
