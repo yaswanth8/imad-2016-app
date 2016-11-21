@@ -32,7 +32,7 @@ body {
     font-family: "Times New Roman", Times, serif;
     text-align: center;
     
-    background-color:#B7C2EC;
+    background-color:#53E9B7;
     
     
 }
@@ -79,6 +79,7 @@ header {
     background-color: #1697ED;
     text-align: left;
     font-size: 150%;
+    padding-top: 60px;
     font-weight: bold;
 }
 
