@@ -68,7 +68,7 @@ body {
  
 footer {
     font-family: "Times New Roman", Times, serif;
-    background-color: brown;
+    background-color: #8164DF;
     padding-top: 60px;
     text-align: center;
     font-size: 150%;
@@ -76,7 +76,7 @@ footer {
 }
 header {
     font-family: "Times New Roman", Times, serif;
-    background-color: #00FFFF;
+    background-color: #1697ED;
     text-align: left;
     font-size: 150%;
     font-weight: bold;
