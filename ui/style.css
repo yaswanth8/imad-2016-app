@@ -35,12 +35,14 @@ body {
     
     
 }
- .container {
+
+
+ .loginbody {
                  max-width: 800px;
                  margin: 0 auto;
-                 color: gray;
+                 color: black;
                  font-family: "Times New Roman", Times, serif;
-                 
+                 background-color:green;
                   padding-left: 20px;
  }
  
