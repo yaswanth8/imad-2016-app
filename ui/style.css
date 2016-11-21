@@ -32,7 +32,7 @@ body {
     font-family: "Times New Roman", Times, serif;
     text-align: center;
     
-    background-color:lightblue;
+    background-color:#B7C2EC;
     
     
 }
@@ -43,7 +43,7 @@ body {
                  margin: 0 auto;
                  color: black;
                  font-family: "Times New Roman", Times, serif;
-                 background-color:green;
+                 background-color:#1DC4D7;
                   padding-left: 20px;
  }
  
@@ -68,7 +68,7 @@ body {
  
 footer {
     font-family: "Times New Roman", Times, serif;
-    background-color: #8164DF;
+    background-color: #F25B5B;
     padding-top: 60px;
     text-align: center;
     font-size: 150%;
