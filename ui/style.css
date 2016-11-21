@@ -43,7 +43,7 @@ body {
                  margin: 0 auto;
                  color: black;
                  font-family: "Times New Roman", Times, serif;
-                 background-color:#1DC4D7;
+                 background-color: #7A71ED;
                   padding-left: 20px;
  }
  
@@ -68,7 +68,7 @@ body {
  
 footer {
     font-family: "Times New Roman", Times, serif;
-    background-color: #F25B5B;
+    background-color: brown;
     padding-top: 60px;
     text-align: center;
     font-size: 150%;
