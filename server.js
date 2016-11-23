@@ -257,23 +257,11 @@ app.get('/ui/:fileName', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-
-
-app.get('/ui/fb.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'fb.png'));
+app.get('/feedback',function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'feedback.html'));
 });
 
-app.get('/ui/twitter.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'twitter.png'));
-});
 
-app.get('/ui/instagram.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'instagram.png'));
-});
-
-app.get('/ui/linkedin.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'linkedin.png'));
-});
 
 
 
