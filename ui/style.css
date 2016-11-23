@@ -2,7 +2,7 @@ body {
     font-family: "Times New Roman", Times, serif;
   font-weight: bolder;
    padding-top: 5px;
-     background-color:#7D7B7B;
+     background-image: url("http://wallpapercave.com/wp/UyNOzwq.jpg");
 }
 
 .center {
@@ -40,7 +40,7 @@ body {
     font-family: "Times New Roman", Times, serif;
     text-align: center;
     
-    background-color:#D3F2D4;
+    background-color:#7D7B7B;
     
     
 }
@@ -51,7 +51,7 @@ body {
                  margin: 0 auto;
                  color: black;
                  font-family: "Times New Roman", Times, serif;
-                 background-color: #E2DADA;
+                 
                   padding-left: 20px;
  }
  
@@ -84,7 +84,7 @@ footer {
 }
 header {
     font-family: "Times New Roman", Times, serif;
-    background-color: #1697ED;
+    background-color: #6B6E6D;
     text-align: left;
     font-size: 150%;
     padding-top: 10px;
