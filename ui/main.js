@@ -116,8 +116,8 @@ var content = document.getElementById('content').value;
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({heading: heading, title: title, content: content}));  
         store.value = 'Creating...';
-    }
-};
+    };
+}
 
 function loadLoggedInUser (username) {
     var loginArea = document.getElementById('login_area');
