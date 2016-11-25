@@ -117,7 +117,7 @@ var content = document.getElementById('content').value;
         request.send(JSON.stringify({heading: heading, title: title, content: content}));  
         store.value = 'Creating...';
     };
-}
+};
 
 function loadLoggedInUser (username) {
     var loginArea = document.getElementById('login_area');
