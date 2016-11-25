@@ -113,7 +113,7 @@ app.post('/create-article', function (req, res) {
    var title = req.body.title;
    var heading = req.body.heading;
    var content = req.body.content;
-   pool.query('INSERT INTO "article" (title, heading, content) VALUES ($1, $2, $3)', [title, heading, content], function (err, result) {
+   pool.query('INSERT INTO "article" (title, heading, content) VALUES ($2, $3, $5)', [title, heading, content], function (err, result) {
       if (err) {
           res.status(500).send(err.toString());
       } else {
