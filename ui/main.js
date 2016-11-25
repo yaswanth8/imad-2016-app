@@ -85,6 +85,40 @@ function loadLoginForm () {
     };
 }
 
+function loadArticleForm() {
+    var articleHtml = `
+        <h2>Write an Article</h2>
+        <input type="text" id="heading" placeholder="heading" /><br/>
+        <input type="text" id="title" placeholder="title" /><br/>
+        <textarea rows="4" cols="50" id="content" placeholder="Content" /></textarea><br/>
+        <input type="submit" id="save_btn" value="Create Article" />
+        `;
+        document.getElementById('article_area').innerHTML = articleHtml;
+        var store = document.getElementById('save_btn');
+        store.onclick = function () {
+        var request = new XMLHttpRequest();
+        request.onreadystatechange = function () {
+          if (request.readyState === XMLHttpRequest.DONE) {
+              if (request.status === 200) {
+                  alert('Article created successfully');
+                  store.value = 'Article Created';
+              } 
+                  else {
+                  alert('Article could not be created');
+                  store.value = 'Create Article';
+              }
+          }
+        };
+var heading = document.getElementById('heading').value;
+var title = document.getElementById('title').value;
+var content = document.getElementById('content').value;
+        request.open('POST', '/create-article', true);
+        request.setRequestHeader('Content-Type', 'application/json');
+        request.send(JSON.stringify({heading: heading, title: title, content: content}));  
+        store.value = 'Creating...';
+    };
+}
+
 function loadLoggedInUser (username) {
     var loginArea = document.getElementById('login_area');
     loginArea.innerHTML = `
