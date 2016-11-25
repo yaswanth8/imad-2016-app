@@ -136,6 +136,7 @@ function loadLogin () {
                 loadLoggedInUser(this.responseText);
             } else {
                 loadLoginForm();
+                 loadArticleForm();
             }
         }
     };
