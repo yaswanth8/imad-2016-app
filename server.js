@@ -65,7 +65,7 @@ function createTemplate(data){
                                  <center>Loading comments...</center>
                                      </div>
                  </div>
-                 <footer> ${foot} <div> <p align="right"><a href="http://yaswanth8.imad.hasura-app.io/articles/article-feedback">Send feedback</a></p></div></footer>    
+                 <footer> ${foot} <div> <p align="right"><a href="http://yaswanth8.imad.hasura-app.io/feedback">Feedback</a></p></div></footer>    
                  <script type="text/javascript" src="/ui/article.js"></script>
          </body>
             </html>`;
@@ -95,7 +95,7 @@ app.get('/hash/:input', function(req, res) {
 });
 
 app.post('/create-user', function (req, res) {
-  
+   
    var username = req.body.username;
    var password = req.body.password;
    var salt = crypto.randomBytes(128).toString('hex');
@@ -108,20 +108,6 @@ app.post('/create-user', function (req, res) {
       }
    });
 });
-
-app.post('/create-article', function (req, res) {
-   var title = req.body.title;
-   var heading = req.body.heading;
-   var content = req.body.content;
-   pool.query('INSERT INTO "article" (title, heading, content) VALUES ($1, $2, $3)', [title, heading, content], function (err, result) {
-      if (err) {
-          res.status(500).send(err.toString());
-      } else {
-          res.send('Article successfully created: '+ heading);
-      }
-   });
-});
-
 
 app.post('/login', function (req, res) {
    var username = req.body.username;
@@ -272,6 +258,10 @@ app.get('/ui/:fileName', function (req, res) {
 app.get('/feedback',function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'feedback.html'));
 });
+
+
+
+
 
 
 
