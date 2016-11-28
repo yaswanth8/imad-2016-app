@@ -73,7 +73,7 @@ body {
 .menubar div
 {
     padding:5px;
-    border-bottom:2px solid white;
+    border-bottom:2px solid black;
     cursor:pointer;
 }
 .text-big {
