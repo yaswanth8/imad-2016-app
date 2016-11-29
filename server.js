@@ -259,6 +259,9 @@ app.get('/feedback',function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'feedback.html'));
 });
 
+app.get('/speech',function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'speech.html'));
+});
 
 
 
