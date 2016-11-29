@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+        <head>
+        <title> feedback </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+         <link href="/ui/style.css" rel="stylesheet" />
+         <style>
+                .speech {border: 1px solid #DDD; width: 300px; padding: 0; margin: 0}
+                      .speech input {border: 0; width: 240px; display: inline-block; height: 30px;}
+                              .speech img {float: right; width: 40px }
+          </style>
+<script>
+            function startDictation() {
+                  if (window.hasOwnProperty(‘webkitSpeechRecognition’)) {
+                      var recognition = new webkitSpeechRecognition();
+
+                      recognition.continuous = false;
+                      recognition.interimResults = false;
+
+                                    recognition.lang = “en-US”;
+                        recognition.start();
+
+                      recognition.onresult = function(e) {
+                    document.getElementById(‘transcript’).value
+                            = e.results[0][0].transcript;
+                                  recognition.stop();
+                            document.getElementById(‘searchBox’).submit();
+                                            };
+
+                              recognition.onerror = function(e) {
+                              recognition.stop();
+                                      }
+
+                                            }
+                                            }
+</script>
+        
+        </head>
+   
+             <body>
+                <header> <a href="/">Home</a> </header>
+                
+                <form id=”searchBox” method=”get” action=”http://www.techmuzz.com”>
+                        <div class=”speech”>
+                            <input type=”text” name=”s” id=”transcript” placeholder=”Speak” />
+                                <img onclick=”startDictation()” src=”http://i.imgur.com/cHidSVu.gif” />
+                                      </div>
+                </form>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                 <footer> 
+                 <a href="https://www.facebook.com/yaswanth8" target="_blank"> <img src="https://raw.githubusercontent.com/yaswanth8/imad-2016-app/master/ui/fb.png" class="img-small"/> </a>
+                <a href="https://twitter.com/yaswanth8k" target="_blank">  <img src="https://raw.githubusercontent.com/yaswanth8/imad-2016-app/master/ui/twitter.png"  class="img-small"/> </a>
+                <a href= "https://www.instagram.com/yaswanth___k/" target="_blank"><img src="https://raw.githubusercontent.com/yaswanth8/imad-2016-app/master/ui/instagram.png" class="img-small"/> </a>
+                <a href= "https://www.linkedin.com/in/yaswanth-kondaveeti-49811a45?trk=hp-identity-name" target="_blank"><img src="https://raw.githubusercontent.com/yaswanth8/imad-2016-app/master/ui/linkedin.png"  class="img-small"/> </a>
+                <div class="center"> Copyright Â© Yaswanth Kondaveeti 2016 </div>
+                 
+                 
+                 </footer>
+                 
+         </body>
+            </html>
