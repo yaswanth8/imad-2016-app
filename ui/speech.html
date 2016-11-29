@@ -9,7 +9,23 @@
                       .speech input {border: 0; width: 240px; display: inline-block; height: 30px;}
                               .speech img {float: right; width: 40px }
           </style>
-<script>
+
+        
+        </head>
+   
+             <body>
+                <header> <a href="/">Home</a> </header>
+                
+                <form id=”searchBox” method=”get” action=”http://www.techmuzz.com”>
+                        <div class=”speech”>
+                            <input type=”text” name=”s” id=”transcript” placeholder=”Speak” />
+                                <img onclick=”startDictation()” src=”http://i.imgur.com/cHidSVu.gif” />
+                                      </div>
+                </form>
+                
+                
+                
+             <script>
             function startDictation() {
                   if (window.hasOwnProperty(‘webkitSpeechRecognition’)) {
                       var recognition = new webkitSpeechRecognition();
@@ -33,23 +49,7 @@
 
                                             }
                                             }
-</script>
-        
-        </head>
-   
-             <body>
-                <header> <a href="/">Home</a> </header>
-                
-                <form id=”searchBox” method=”get” action=”http://www.techmuzz.com”>
-                        <div class=”speech”>
-                            <input type=”text” name=”s” id=”transcript” placeholder=”Speak” />
-                                <img onclick=”startDictation()” src=”http://i.imgur.com/cHidSVu.gif” />
-                                      </div>
-                </form>
-                
-                
-                
-                
+</script>   
                 
                 
                 
