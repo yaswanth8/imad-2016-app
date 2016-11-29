@@ -5,7 +5,7 @@ function loadLoginForm () {
             <center>
           <ul style="list-style-type:none" class="loginbox" >
        <h2>Login or Register to comment these articles below</h2>  
-       <li> User  ID:  <input type="text" id="username" placeholder="Username" />  </li>
+       <li><h1> User  ID:  <input type="text" id="username" placeholder="Username" /></h1>  </li>
        <li> Password:  <input type="password" id="password" placeholder="password" />  <li> 
         </ul>
     <br/><br/>
